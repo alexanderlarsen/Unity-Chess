@@ -5,7 +5,7 @@ A straightforward user interface is integrated for game management, offering opt
 
 The codebase is available for review, and contributions for improvement are welcome. Feel free to utilize parts of the code in other projects as needed.
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 
 # License
