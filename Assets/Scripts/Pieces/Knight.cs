@@ -1,0 +1,50 @@
+﻿using Chess.Moves;
+using System.Collections.Generic;
+using UnityEngine;
+using Zenject;
+
+namespace Chess.Pieces
+{
+	public class Knight : Piece
+	{
+		[Inject]
+		private readonly MoveValidator moveValidator;
+
+		private readonly Vector3Int[] moveOffsets =
+		{
+		new (-1, 0, 2),
+		new (1, 0, 2),
+		new (1, 0, -2),
+		new (-1, 0, -2),
+		new (-2, 0, 1),
+		new (2, 0, 1),
+		new (2, 0, -1),
+		new (-2, 0, -1)
+	};
+
+		public override List<IMoveData> GetMoves()
+		{
+			List<IMoveData> moves = GetPotentialMoves();
+			moveValidator.FilterMovesBasedOnPieceRules(moves);
+			moveValidator.FilterOutMovesThatExposeKingToCheck(moves);
+			return moves;
+		}
+
+		public override List<IMoveData> GetMovesWithoutCheckValidation()
+		{
+			List<IMoveData> moves = GetPotentialMoves();
+			moveValidator.FilterMovesBasedOnPieceRules(moves);
+			return moves;
+		}
+
+		private List<IMoveData> GetPotentialMoves()
+		{
+			List<IMoveData> moves = new();
+
+			foreach (var offset in moveOffsets)
+				moves.Add(new StandardMoveData(this, Position + offset));
+
+			return moves;
+		}
+	}
+}

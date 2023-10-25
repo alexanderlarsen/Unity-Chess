@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5659284966044152850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264092518249890169}
+  - component: {fileID: 2992582174018379047}
+  - component: {fileID: 427632237871272140}
+  - component: {fileID: 2850670494769597765}
+  - component: {fileID: 6590848457127746194}
+  - component: {fileID: 2611695232159542494}
+  m_Layer: 0
+  m_Name: Core
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264092518249890169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2992582174018379047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67624e4abe40e3a4bb27524cf978fa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &427632237871272140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2517bac942cdc454fac0d8aff6e2e123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2850670494769597765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad23216978b5933459daf7b135e09260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6590848457127746194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9f4ab40ccc25a4281dbb58b376c230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectionMarkerPrefab: {fileID: 4061472591607002924, guid: a9ff7b47df3eadc4189bae36ce837912, type: 3}
+  moveMarkerPrefab: {fileID: 4061472591607002924, guid: 53af6ac28708dd54d908f308471fc758, type: 3}
+--- !u!114 &2611695232159542494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5659284966044152850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43d871ba97fd9149a359ecf3f396393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kingPrefab: {fileID: 1149245885771381446, guid: f05daf41edc591648b691539c8ea7563, type: 3}
+  queenPrefab: {fileID: 2273174469837475823, guid: ec7a6fb8ccdd13e41945d5c390636100, type: 3}
+  rookPrefab: {fileID: 5194822990495463963, guid: cc3132b0aef2daf48986c7fe452f8e51, type: 3}
+  knightPrefab: {fileID: 2925309205543793416, guid: e7d165725af3dbb49bde6c23ade9e674, type: 3}
+  bishopPrefab: {fileID: 7462584140850698519, guid: 5490272069e5bcc48aa171e0a2d36186, type: 3}
+  pawnPrefab: {fileID: 3387881488958744818, guid: dbfa2c17a51d8ee40888031dfe021629, type: 3}
+  whitePiecesParent: {fileID: 0}
+  blackPiecesParent: {fileID: 0}
+  blackMaterial: {fileID: 2100000, guid: 18a4eb9ca0bacce46bca35dd1a4a8410, type: 2}
+  whiteMaterial: {fileID: 2100000, guid: ee28c603c0c671c4da052a0a100a7662, type: 2}
