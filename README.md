@@ -5,6 +5,9 @@ A straightforward user interface is integrated for game management, offering opt
 
 The codebase is available for review, and contributions for improvement are welcome. Feel free to utilize parts of the code in other projects as needed.
 
+![Screenshot](screenshot.png)
+
+
 # License
 
 This project is open-sourced under the MIT License - see the [LICENSE.md](https://github.com/alexanderlarsen/Chess/blob/main/LICENSE) file for details.
